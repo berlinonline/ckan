@@ -2,7 +2,19 @@ import ckan.plugins as p
 from ckan.lib.base import BaseController, config
 import stats as stats_lib
 
+import ckan.logic
+from ckan.lib.base import *
+
+
 class StatsController(BaseController):
+
+    def __before__(self, action, **env):
+        try:
+            BaseController.__before__(self, action, **env)
+            context = {'model': model, 'user': c.user or c.author}
+            ckan.logic.check_access('site_read', context)
+        except ckan.logic.NotAuthorized:
+            abort(401, _('Not authorized to see this page'))
 
     def index(self):
         c = p.toolkit.c
