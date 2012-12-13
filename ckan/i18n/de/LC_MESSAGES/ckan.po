@@ -81,7 +81,7 @@ msgstr "Befehl nicht implementiert."
 #: ckan/controllers/user.py:58 ckan/controllers/user.py:86
 #: ckan/controllers/user.py:107 ckan/logic/auth/get.py:18
 msgid "Not authorized to see this page"
-msgstr "Sie haben keine Autorisierung seite zu sehen"
+msgstr "Sie haben keine Autorisierung diese Seite zu sehen."
 
 #: ckan/controllers/api.py:117 ckan/controllers/api.py:187
 msgid "Access denied"
@@ -257,7 +257,7 @@ msgstr "Benutzer %r hat keine Berechtigung %s zu bearbeiten"
 
 #: ckan/controllers/group.py:390 ckan/controllers/package.py:358
 msgid "Select two revisions before doing the comparison."
-msgstr "Wählen Sie zwei Revisionen um den Vergleich durcvhzuführen"
+msgstr "Wählen Sie zwei Revisionen um den Vergleich durchzuführen"
 
 #: ckan/controllers/group.py:416
 msgid "CKAN Group Revision History"
@@ -280,7 +280,7 @@ msgid ""
 "Please <a href=\"{link}\">update your profile</a> and add your email address"
 " and your full name. {site} uses your email address if you need to reset "
 "your password."
-msgstr "Bitte <a href=\"{link}\">aktualisiere Dein Profil</a> und trage Deine Emailadresse und Deinen vollständigen Namen ein. {site} nutzt Deine Emailadresse, um Dein Passwort zurücksetzen zu können."
+msgstr "Bitte <a href=\"{link}\">aktualisieren Sie ihr Profil</a> und tragen Sie ihre E-Mailadresse und vollständigen Namen ein. {site} nutzt die E-Mailadresse, um ihr Passwort zurücksetzen zu können."
 
 #: ckan/controllers/home.py:86
 #, python-format
@@ -2063,7 +2063,7 @@ msgstr ""
 
 #: ckan/templates/activity_streams/changed_user.html:8
 msgid "{actor} updated their profile"
-msgstr ""
+msgstr "{actor} hat das Profil geändert"
 
 #: ckan/templates/activity_streams/deleted_group.html:8
 msgid "{actor} deleted the group {object}"
@@ -2760,7 +2760,7 @@ msgstr "Weil Sie sich nicht angemeldet haben, wird dies nur Ihre IP-Addresse sei
 
 #: ckan/templates/package/edit_form.html:23
 msgid "Click here to sign in"
-msgstr "Zum anmelden hier klicken"
+msgstr "Zum Anmelden hier klicken"
 
 #: ckan/templates/package/edit_form.html:23
 msgid "before saving (opens in new window)."
@@ -3532,7 +3532,7 @@ msgstr ""
 
 #: ckan/templates/user/dashboard.html:17
 msgid "What's going on?"
-msgstr ""
+msgstr "Was gibt es neues?"
 
 #: ckan/templates/user/dashboard.html:25
 msgid "Nothing new on CKAN?"
@@ -3569,11 +3569,11 @@ msgstr "Benutzer bearbeiten:"
 
 #: ckan/templates/user/edit_user_form.html:21
 msgid "Full name"
-msgstr ""
+msgstr "Vollständiger Name"
 
 #: ckan/templates/user/edit_user_form.html:27
 msgid "E-mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: ckan/templates/user/edit_user_form.html:33
 msgid "OpenId"
@@ -3581,7 +3581,7 @@ msgstr ""
 
 #: ckan/templates/user/edit_user_form.html:41
 msgid "A little about you..."
-msgstr "Einen Absatz über Sie..."
+msgstr "Einen kurzen Absatz über Sie..."
 
 #: ckan/templates/user/edit_user_form.html:46
 msgid "Change your password"
@@ -3590,12 +3590,12 @@ msgstr "Passwort ändern"
 #: ckan/templates/user/edit_user_form.html:48
 #: ckan/templates/user/new_user_form.html:40
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: ckan/templates/user/edit_user_form.html:54
 #: ckan/templates/user/new_user_form.html:47
 msgid "Password (repeat)"
-msgstr ""
+msgstr "Passwort (wiederholen)"
 
 #: ckan/templates/user/edit_user_form.html:61
 msgid "Change your username"
@@ -3603,13 +3603,13 @@ msgstr "Nutzername ändern"
 
 #: ckan/templates/user/edit_user_form.html:63
 msgid "Username"
-msgstr ""
+msgstr "Benutzername"
 
 #: ckan/templates/user/edit_user_form.html:66
 msgid ""
 "Changing your username will log you out, and require you to log back in with"
 " the new username"
-msgstr ""
+msgstr "Durch Ändern des Nutzernamens werden Sie automatisch ausgeloggt, und müssen sich dann mit dem neuen Namen erneut anmelden."
 
 #: ckan/templates/user/followers.html:6
 msgid "- Followers - User"
@@ -3617,7 +3617,7 @@ msgstr ""
 
 #: ckan/templates/user/followers.html:8
 msgid "'s Followers"
-msgstr ""
+msgstr "s Followers"
 
 #: ckan/templates/user/layout.html:11
 msgid "Dashboard"
@@ -3637,7 +3637,7 @@ msgstr "Abmelden"
 
 #: ckan/templates/user/layout.html:16
 msgid "My Followers ({num_followers})"
-msgstr ""
+msgstr "Meine Follower ({num_followers})"
 
 #: ckan/templates/user/layout.html:25
 msgid "View Profile"
@@ -3686,11 +3686,11 @@ msgstr "Passwort:"
 
 #: ckan/templates/user/login.html:41
 msgid "Remember me:"
-msgstr ""
+msgstr "Angemeldet bleiben:"
 
 #: ckan/templates/user/login.html:49
 msgid "Sign In"
-msgstr ""
+msgstr "Anmelden"
 
 #: ckan/templates/user/login.html:51
 msgid "Forgot your password?"
@@ -3781,7 +3781,7 @@ msgstr "Mehr als drei Zeichen, nur 'a-z0-9' und '-_' benutzen"
 
 #: ckan/templates/user/new_user_form.html:27
 msgid "Full name (optional)"
-msgstr ""
+msgstr "Vollständiger Name (optional)"
 
 #: ckan/templates/user/new_user_form.html:34
 msgid "E-Mail"
@@ -3805,7 +3805,7 @@ msgstr "Mitglied seit"
 
 #: ckan/templates/user/read.html:32
 msgid "Email"
-msgstr "Email"
+msgstr "E-Mail"
 
 #: ckan/templates/user/read.html:37
 msgid "No email"
