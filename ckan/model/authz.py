@@ -70,6 +70,7 @@ class Role(Enum):
     EDITOR = u'editor'
     ANON_EDITOR = u'anon_editor'
     READER = u'reader'
+    BERLIN_USER = u'berlin_user'
 
 # These define what is meant by 'editor' and 'reader' for all ckan
 # instances - locked down or otherwise. They get refreshed on every db_upgrade.
@@ -96,8 +97,13 @@ default_role_actions = [
     (Role.READER, Action.USER_READ),
     (Role.READER, Action.SITE_READ),
     (Role.READER, Action.READ),
+    (Role.BERLIN_USER, Action.SITE_READ),
+    (Role.BERLIN_USER, Action.USER_READ),
+    (Role.BERLIN_USER, Action.READ),
+    (Role.BERLIN_USER, Action.PACKAGE_CREATE),
     ]
 
+# read-site, read-user, read, create-package
 
 ## ======================================
 ## Table Definitions
