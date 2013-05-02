@@ -101,6 +101,7 @@ default_role_actions = [
     (Role.BERLIN_USER, Action.USER_READ),
     (Role.BERLIN_USER, Action.READ),
     (Role.BERLIN_USER, Action.PACKAGE_CREATE),
+    (Role.BERLIN_USER, Action.UPLOAD_ACTION),
     ]
 
 # read-site, read-user, read, create-package
