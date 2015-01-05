@@ -492,7 +492,7 @@ def gravatar(email_hash, size=100, default=None):
         # treat the default as a url
         default = urllib.quote(default, safe='')
 
-    return literal('''<img src="http://gravatar.com/avatar/%s?s=%d&amp;d=%s"
+    return literal('''<img src="https://gravatar.com/avatar/%s?s=%d&amp;d=%s"
         class="gravatar" />'''
         % (email_hash, size, default)
         )
