@@ -47,8 +47,8 @@ copyright = u'''&copy; 2009-2012, <a href="http://okfn.org/">Open Knowledge Foun
     Licensed under <a
     href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
     Attribution ShareAlike (Unported) v3.0 License</a>.<br />
-    <img src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" alt="CC License Logo" />
-    <a href="http://opendefinition.org/"><img src="http://assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" border="0" 
+    <img src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" alt="CC License Logo" />
+    <a href="http://opendefinition.org/"><img src="https://assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" border="0" 
       alt="{{ _('Open Content') }}" /></a>
   '''
 html_show_sphinx = False
