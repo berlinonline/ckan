@@ -603,6 +603,6 @@ class DefaultPermissionLabels(object):
         labels.append(u'creator-%s' % user_obj.id)
 
         orgs = logic.get_action(u'organization_list_for_user')(
-            {u'user': user_obj.id}, {u'permission': u'read'})
+            {u'user': user_obj.name}, {u'permission': u'read'})
         labels.extend(u'member-%s' % o[u'id'] for o in orgs)
         return labels
