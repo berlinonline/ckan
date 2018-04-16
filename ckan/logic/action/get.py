@@ -318,10 +318,29 @@ def member_list(context, data_dict=None):
             for m in q.all()]
 
 
-def _group_or_org_list(context, data_dict, is_org=False):
+def _group_or_org_list(context, data_dict, is_org=False, compute_full=False):
     model = context['model']
     api = context.get('api_version')
     groups = data_dict.get('groups')
+
+    # this would be better implemented by checking for an extra value
+    # in the group (is_technical_group(True/False)) and filtering by
+    # those
+    if not compute_full:
+        if context['user']:
+            if not authz.is_sysadmin(context['user']):
+                conf = data_dict
+                conf['all_fields'] = False
+                conf.pop('limit', None)
+                all_groups = _group_or_org_list(context, conf, is_org, True)
+                technical_groups = config.get("berlin.technical_groups", "")
+                technical_groups = technical_groups.split(" ")
+                non_technical_groups = [x for x in all_groups if x not in technical_groups]
+                if len(groups) > 0:
+                    groups = [x for x in non_technical_groups if x in groups]
+                else:
+                    groups = non_technical_groups
+
     group_type = data_dict.get('type', 'group')
     ref_group_by = 'id' if api == 2 else 'name'
     pagination_dict = {}
