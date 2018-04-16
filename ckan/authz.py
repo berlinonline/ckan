@@ -174,7 +174,7 @@ def is_authorized(action, context, data_dict=None):
            and not context.get('auth_user_obj'):
             return {'success': False,
                     'msg': '{0} requires an authenticated user'
-                            .format(auth_function)
+                            .format(auth_function.__name__)
                    }
 
         return auth_function(context, data_dict)
