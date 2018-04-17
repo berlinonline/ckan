@@ -439,7 +439,10 @@ def _group_or_org_list(context, data_dict, is_org=False, compute_full=False):
                 if key not in data_dict:
                     data_dict[key] = False
 
-            group_list.append(logic.get_action(action)(context, data_dict))
+            try:
+                group_list.append(logic.get_action(action)(context, data_dict))
+            except logic.NotAuthorized:
+                pass
     else:
         group_list = [getattr(group, ref_group_by) for group in groups]
 
