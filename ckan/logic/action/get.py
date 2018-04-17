@@ -329,13 +329,15 @@ def _group_or_org_list(context, data_dict, is_org=False, compute_full=False):
     if not compute_full:
         if context['user']:
             if not authz.is_sysadmin(context['user']):
-                conf = data_dict
+                conf = data_dict.copy()
                 conf['all_fields'] = False
                 conf.pop('limit', None)
                 all_groups = _group_or_org_list(context, conf, is_org, True)
                 technical_groups = config.get("berlin.technical_groups", "")
                 technical_groups = technical_groups.split(" ")
                 non_technical_groups = [x for x in all_groups if x not in technical_groups]
+                if not groups:
+                    groups = []
                 if len(groups) > 0:
                     groups = [x for x in non_technical_groups if x in groups]
                 else:
