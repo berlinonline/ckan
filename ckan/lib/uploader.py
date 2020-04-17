@@ -12,6 +12,7 @@ import ckan.logic as logic
 import ckan.plugins as plugins
 from ckan.common import config
 
+logging.basicConfig()
 log = logging.getLogger(__name__)
 
 _storage_path = None
