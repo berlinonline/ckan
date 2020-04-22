@@ -149,7 +149,7 @@ def make_pylons_stack(conf, full_stack=True, static_files=True,
             cache_max_age=static_max_age)
         static_parsers = [static_app, app]
 
-        storage_directory = uploader.get_storage_path()
+        storage_directory = uploader.get_storage_path(call_to_determine_enabled=True)
         if storage_directory:
             path = os.path.join(storage_directory, 'storage')
             try:

@@ -2167,7 +2167,7 @@ def new_activities():
 
 @core_helper
 def uploads_enabled():
-    if uploader.get_storage_path():
+    if uploader.get_storage_path(call_to_determine_enabled=True):
         return True
     return False
 

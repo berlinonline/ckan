@@ -47,7 +47,7 @@ def get_resource_uploader(data_dict):
     return upload
 
 
-def get_storage_path():
+def get_storage_path(call_to_determine_enabled=False):
     '''Function to cache storage path'''
     global _storage_path
 
@@ -69,8 +69,9 @@ def get_storage_path():
                          config for your uploads''')
             _storage_path = False
         else:
-            log.critical('''Please specify a ckan.storage_path in your config
-                         for your uploads''')
+            if not call_to_determine_enabled:
+                log.critical('''Please specify a ckan.storage_path in your config
+                            for your uploads''')
             _storage_path = False
 
     return _storage_path
